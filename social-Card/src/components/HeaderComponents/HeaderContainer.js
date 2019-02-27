@@ -8,8 +8,10 @@ const HeaderContainer = () => {
   return (
     // make fragment?
     <div className='header'>
-      <div><ImageThumbnail /></div>
-      <div>
+      <div className='header-item'>
+        <ImageThumbnail />
+      </div>
+      <div className='header-item'>
         <HeaderTitle />
         <HeaderContent />
       </div>

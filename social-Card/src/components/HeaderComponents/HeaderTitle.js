@@ -4,7 +4,7 @@ import './Header.css';
 const HeaderTitle = () => {
   return (
     <React.Fragment>
-      <strong>Lambda School</strong>
+      <span>Lambda School</span>
       <span>@LambdaSchool</span>
       <span>26 jan</span>
     </React.Fragment>

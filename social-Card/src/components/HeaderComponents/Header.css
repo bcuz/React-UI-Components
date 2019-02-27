@@ -2,8 +2,22 @@
 
 img {
   width: 50px;
+  margin-right: 10px;
+}
+
+span:first-child {
+  font-weight: bold;
+}
+
+span {
+  margin-right: 10px;
 }
 
 .header {
-  /* display: flex; */
+  display: flex;
+}
+
+p {
+  margin-top: 10px;
+  line-height: 1.2;
 }

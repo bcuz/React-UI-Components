@@ -4,7 +4,7 @@ import './Header.css';
 const HeaderContent = () => {
   return (
     <React.Fragment>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident, voluptates ut deleniti doloremque libero laboriosam. Optio facilis mollitia adipisci.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo sequi numquam a. Nemo, quaerat totam rerum esse assumenda in molestias consectetur incidunt quidem labore dicta.</p>
     </React.Fragment>
 
   )
