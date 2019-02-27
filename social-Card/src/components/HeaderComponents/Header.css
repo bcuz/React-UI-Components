@@ -1,1 +1,9 @@
 /* All styles for your header Components live here */
+
+img {
+  width: 50px;
+}
+
+.header {
+  /* display: flex; */
+}
