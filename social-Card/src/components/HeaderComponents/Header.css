@@ -17,6 +17,14 @@ span {
   display: flex;
 }
 
+.header-item:first-child {
+  width: 10%;
+}
+
+.header-item:last-child {
+  width: 90%;
+}
+
 p {
   margin-top: 10px;
   line-height: 1.2;
