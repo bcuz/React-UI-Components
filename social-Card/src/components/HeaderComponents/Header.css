@@ -9,6 +9,10 @@ span:first-child {
   font-weight: bold;
 }
 
+span:not(:first-child) {
+  color: #657786;
+}
+
 span {
   margin-right: 10px;
 }
