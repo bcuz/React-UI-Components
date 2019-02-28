@@ -6,4 +6,7 @@
 .container {
   margin-top: 10px;
   max-width: 590px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
