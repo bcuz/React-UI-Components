@@ -3,13 +3,12 @@ import './App.css';
 import NumberButton from './components/ButtonComponents/NumberButton';
 import ActionButton from './components/ButtonComponents/ActionButton';
 
-let keys = ["%", 7, 8, 9, "x", 4, 5, 6, "-",  1, 2, 3, "+"]
+let keys = [String.fromCharCode(247), 7, 8, 9, "x", 4, 5, 6, String.fromCharCode(8212),  1, 2, 3, "+"]
 
 const App = () => {
   return (
     <div className="main">
       <ActionButton text='clear' />
-      {/* if not a num style it differently */}
       {keys.map(key => {
         return <NumberButton 
         buttonStyle={(typeof key === 'number') ? 'num' : 'symbol'} 

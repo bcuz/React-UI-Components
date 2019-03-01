@@ -1,10 +1,27 @@
+.action, .btn {
+  border: 1px solid #979797;
+}
+
 button, .btn {
   /* padding: 20px; */
   width: 25%;
   text-align: center;
 }
 
+.btn, .action {
+  padding: 10px 0;
+}
+
+.num {
+  font-weight: bold;
+}
+
 .action {
   width: 75%;
   text-align: center;
+}
+
+.symbol {
+  background-color: #a0041e;
+  color: #fff;
 }
