@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: '0'
+      total: ''
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -22,10 +22,9 @@ class App extends React.Component {
     let getInt = parseInt(e.target.textContent)
     
     if (text === 'clear'){
-      this.setState({ total: '0' })
+      this.setState({ total: '' })
     } else if (isNaN(getInt) !== true) {
-      // this.setState({ total: this.state.total + String(getInt) })        
-      this.setState({ total: getInt })        
+      this.setState({ total: this.state.total + String(getInt) })        
     }
 
   }
