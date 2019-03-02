@@ -1,10 +1,17 @@
 import React from 'react';
 import './Button.css';
 
+function handleClick(e) {
+  // e.preventDefault();
+  // alert('hi')
+
+  // this.setState({ total: 1 })
+}
+
 const NumberButton = props => {
   return (
     
-    <div className={props.buttonStyle + ' btn'} >
+    <div onClick={handleClick} className={props.buttonStyle + ' btn'} >
     {props.text}
     </div>
   );
