@@ -12,6 +12,14 @@ class App extends React.Component {
     this.state = {
       total: 0
     }
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    // e.preventDefault();
+    alert('hi')
+  
+    // this.setState({ total: 1 })
   }
 
   render() {
@@ -21,6 +29,7 @@ class App extends React.Component {
         <ActionButton text='clear' />
         {keys.map(key => {
           return <NumberButton 
+          handleClick={this.handleClick}
           buttonStyle={(typeof key === 'number') ? 'num' : 'symbol'} 
           text={key} />
         })}
