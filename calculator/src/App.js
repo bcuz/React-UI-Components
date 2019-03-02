@@ -10,30 +10,38 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: 0
+      total: '0'
     }
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
-    // e.preventDefault();
-    alert('hi')
-  
-    // this.setState({ total: 1 })
+    // console.log(e.target.textContent);
+    
+    let text = e.target.textContent
+    let getInt = parseInt(e.target.textContent)
+    
+    if (text === 'clear'){
+      this.setState({ total: '0' })
+    } else if (isNaN(getInt) !== true) {
+      // this.setState({ total: this.state.total + String(getInt) })        
+      this.setState({ total: getInt })        
+    }
+
   }
 
   render() {
     return (
       <div className="main">
       <CalculatorDisplay total={this.state.total}/>
-        <ActionButton text='clear' />
+        <ActionButton handleClick={this.handleClick} text='clear' />
         {keys.map(key => {
           return <NumberButton 
           handleClick={this.handleClick}
           buttonStyle={(typeof key === 'number') ? 'num' : 'symbol'} 
           text={key} />
         })}
-        <ActionButton text='0' />
+        <ActionButton handleClick={this.handleClick} text='0' />
         <NumberButton buttonStyle='symbol' text='=' />
       </div>
     );
