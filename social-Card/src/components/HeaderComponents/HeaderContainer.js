@@ -6,8 +6,7 @@ import HeaderContent from './HeaderContent';
 
 const HeaderContainer = () => {
   return (
-    // make fragment?
-    <div className='header'>
+    <React.Fragment>
       <div className='header-item'>
         <ImageThumbnail />
       </div>
@@ -15,7 +14,7 @@ const HeaderContainer = () => {
         <HeaderTitle />
         <HeaderContent />
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 

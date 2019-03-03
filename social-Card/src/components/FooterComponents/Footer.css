@@ -1,0 +1,17 @@
+.footer {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  width: 90%;
+}
+
+.footer .container {
+  /* width: 90%; */
+  margin-top: 20px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+i {
+  margin-right: 60px;
+  margin-top: 20px;
+}

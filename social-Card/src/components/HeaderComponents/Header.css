@@ -25,7 +25,7 @@ span {
   width: 10%;
 }
 
-.header-item:last-child {
+.header-item:nth-child(2) {
   width: 90%;
 }
 

@@ -1,0 +1,6 @@
+.main {
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 36px;
+}
